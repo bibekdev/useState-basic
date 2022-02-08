@@ -4,7 +4,11 @@ const Setup = () => {
   const [text, setText] = useState('Random Title');
 
   const handleClick = () => {
-    setText('Bibek Chaudhary');
+    if (text === 'Random Title') {
+      setText('Bibek Chaudhary');
+    } else {
+      setText('Random Title');
+    }
   };
   return (
     <>
